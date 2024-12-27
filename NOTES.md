@@ -36,6 +36,28 @@ gnome-terminal
 
 + Small to medium-sized Business/enterprise
 + 1000 hosts or less
++ More networking devices
+
+## Large enterprise
+
++ Anything goes
++ 1000 hosts or More
++ Global
++ ON-premises and clouse-based
+
+
+Search for
+
++ SOHO LAN Diagram
++ Enterprise LAN Diagram
+
+## TCP/IP
+
+
++ TCP/IP is a suite of protocols used by computers to communicate with each other
++ It includes TCP and IP, but also many others including HTTP, FTP, POP3, DNS, DHCP, and many more
+
+
 
 
 
