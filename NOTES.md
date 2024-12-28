@@ -59,6 +59,10 @@ Search for
 
 
 
+ip -br -c a
+
+CIDR Notation and networks
+
 
 
 
