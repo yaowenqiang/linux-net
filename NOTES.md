@@ -63,6 +63,30 @@ ip -br -c a
 
 CIDR Notation and networks
 
+## DHCP
+
+DHCP = Dynamic Host Configuration Protocol
+
+It assigns TCP/IP information automatically to computers(IP address, netmask, GW, and DNS)
+
+RFC2131
+
+Use port 67 and 68 by default
+
+Employs a four step process known as DORA
+
++ Discovery 
++ Offer
++ Request
++ Acknowledge
+
+
+DNS
+
+DNS is the Comain Name System
+
+A wordwide sytem of domains, hosts and DNS servers which is defined in RFC 1591
+
 
 
 
