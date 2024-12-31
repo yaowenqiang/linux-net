@@ -87,9 +87,18 @@ DNS is the Comain Name System
 
 A wordwide sytem of domains, hosts and DNS servers which is defined in RFC 1591
 
+The server use port 53 inbound by default
 
+A fully qualified domain name (FQDN) is the combination of a host name and domain name, example ns1.example.com
 
+The OSI model
 
-
++ Application
++ PResentation
++ Session
++ Transport
++ Network
++ Data Link
++ Physical
 
 
