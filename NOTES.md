@@ -94,7 +94,7 @@ A fully qualified domain name (FQDN) is the combination of a host name and domai
 The OSI model
 
 + Application
-+ PResentation
++ Presentation
 + Session
 + Transport
 + Network
@@ -102,3 +102,22 @@ The OSI model
 + Physical
 
 
+
+| Layer | name | PDU | Protocols |
+| --------------- | --------------- | --------------- | ---------- |
+| Layer7 | Application | Messages(Data) | FTP, HTTPS, POP3
+| Layer6 | Presentation |  | ASCII, XML, JSON  | 
+| Layer5 | Session |  | Duplexing, X.225 |
+| Layer4 | Transport | Segments/Datagrams | TCP - UDP |
+| Layer3 | Network | Packets | IPv4, ICMP, Routing |
+| Layer2 | Data Link | Frames | 802.3, 802.11x |
+| Layer1 | Phsical | bits | 1000BASE-T, Cat 6 |
+
+
+
+TCP/IP model
+
++ Application
++ Transport
++ Internet
++ Link
