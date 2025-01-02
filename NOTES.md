@@ -121,3 +121,15 @@ TCP/IP model
 + Transport
 + Internet
 + Link
+
+Linux systems rely on one of serveral networking services, the three most common are networking, networkd and NetworkManager
+
+
+apt  install network-manager
+
+systemctl status NetworkManager
+
+
+nmcli
+
+
