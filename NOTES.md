@@ -130,6 +130,18 @@ apt  install network-manager
 systemctl status NetworkManager
 
 
+service networking status
+/etc/init.d/networking status
+
+location of configuration file:
+
+/etc/network/interfaces
+
+ip a
+ip r ( short for ip route show)
+
+
+
 nmcli
 
 
