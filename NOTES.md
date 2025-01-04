@@ -140,8 +140,34 @@ location of configuration file:
 ip a
 ip r ( short for ip route show)
 
+ifquery
+
+/etc/resolv.conf
+
+systemctl status systemd-networkd
+
+vim /etc/systemd/network/eth0.network
+
+
+networkd (ubuntu)
 
 
 nmcli
+
+systemctl status systemd-networkd
+
+Location of configuration file:
+Ubuntu Server: /etc/netplan
+Other distros: /etc/systemd/network
+
+netplan try
+netplan apply
+
+networkctl
+networkctl status
+
+/etc/systemd/resolved.conf
+
+resolvectl
 
 
