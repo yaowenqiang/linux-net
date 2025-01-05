@@ -170,4 +170,85 @@ networkctl status
 
 resolvectl
 
+## NetworkManager
+
+systemctl status NetworkManager
+
+
+Can be configured with a variety of tools
+
++ Settings, nm-connection-editor, nmtui, nmctl, cockpit,and configuration files (not recommended)
+
+nmcli
+
+nmcli edit
+
+systemctl status cockpit.socket
+systemctl enable --now cockpit.socket
+
+NetworkManager configure files
+
+/etc/NetworkManager/system-connections( key file, or ini file)
+/etc/sysconfig/network-scripts
+
+journalctl -u NetworkManager
+
+### wicked
+
++ used by SUSE/openSUSE
++ To see if it is active, type systemctl status wicked
++ Can be configured with yaST2(uast command), netconfig command, or configuration file
++ Location of configuration file /etc/sysconfig/network
+
+## Amazon Linux
+
++ Uses the systemd-networkd service
++ systemctl status systemd-networkd
++ /etc/sysconfig/network-scripts
+
+
+
+## The ip Command
+
+
+ip --help
+
+main ip
+
+ip link (Data Link layer)
+ip link show
+ip l
+
+
+ip address (Network Layer)
+ip address show
+ip a
+
+ip -br a
+
+
+ip a s eth0 // just show specified network interface
+
+ip -j a s eth0 // show json format
+ip -j a s eth0 | jq '.' // show json format
+ip -j -p a s eth0 // show json format, pretty
+
+ip a | grep inet   | sort -n
+ip -o -4 a | column -t
+ip  -br  -4 a   | awk '{print $3}'
+ip  -br  -4 a   | awk '{print $3}'  | cut -d/ -f1
+
+/sys/class/net/
+
+ip route show
+ip route
+ip r
+
+ip -c r  | column -t
+
+remote gateway
+
+ip r delete default
+
+
 
