@@ -249,6 +249,69 @@ ip -c r  | column -t
 remote gateway
 
 ip r delete default
+ip r add default via 10.1.20.1
+ip r add  172.21.0.0 dev eth0 
+ip r delete  172.21.0.0/16
+
+## Network Testing Commands
+
++ ping
++ traceroute
++ whois
++ dig(and nslookup)
++ ss
++ nmap
+
+
+### ping
+
+ping <hostname> 
+ping <ip_address> 
+
+ping -c
+ping -s // specifies the packetsize 
+ping -s 1400
+
+
+### traceroute
+
+apt install traceroute
+
+traceroute example.com
+traceroute -n example.com
+traceroute -n example.com -q 5
+
+### whois
+
+whois example.com
+whois prowse.tech
+whois prowse.tech -H -I
+
+
+### dig and nslookup
+
+dig example.com
+dig -x 93.184.215.14
+
+nslookup example.com
+
+nslookup 
+
+### ss
+
+
+ss -ant
+ss -tulnw
+ss -plunt
+ss -tun
+
+
+
+
+
+
+
+
 
 
 
