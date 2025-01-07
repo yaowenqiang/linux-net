@@ -305,10 +305,31 @@ ss -tulnw
 ss -plunt
 ss -tun
 
+## nmap
+
+nmap -V
+
+nmap -sn 10.0.2.0/24
+
+nmap  10.1.20.16
+
+ip neighbor
+
+ip nei
+ip n
 
 
+## Hostnames and DNS
+
+hostnamectl set-hostname <hostame>
+
+vim /etc/hostsname
 
 
+DNS
+
+/etc/resolv.conf
+/etc/systemd/resolved.conf
 
 
 
