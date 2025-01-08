@@ -324,12 +324,33 @@ ip n
 hostnamectl set-hostname <hostame>
 
 vim /etc/hostsname
+hostnamectl set-location lab1
 
 
-DNS
+
+## DNS
 
 /etc/resolv.conf
 /etc/systemd/resolved.conf
+
+nmcli connection modify eth0 ipv4.dns 8.8.8.8
+
+### netplan
+
+vim /etc/netplan/50-cloud-init.yaml 
+
+vim /etc/systemd/resolved.conf
+
+
+## Working with the hosts file
+
+
+
+
+
+## Hostname and FQDN
+
+hostname + domain name = FQDN
 
 
 
