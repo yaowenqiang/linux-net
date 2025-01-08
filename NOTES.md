@@ -348,6 +348,9 @@ vim /etc/systemd/resolved.conf
 
 
 
+
+
+
 ## Hostname and FQDN
 
 hostname + domain name = FQDN
@@ -355,5 +358,19 @@ hostname + domain name = FQDN
 
 
 
+
+
+## nmcli
+
+| nmcli command | Descrioption |
+| -------------- | --------------- |
+| nmcli | Displays the network configuration |
+| nmcli con show | Displays the avaiable NetworkManager connections |
+| nmcli con mod <network-interface> ... | Modifies the connection without the shell |
+| nmcli con down <network-interface> | brings the network interface down |
+| nmcli con up <network-interface> | brings the network interface up |
+| nmcli con edit <network-interface> | Opens the nmcli shell |
+
+nmcli c s ( for connection show)
 
 
