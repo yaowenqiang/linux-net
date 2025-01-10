@@ -373,4 +373,19 @@ hostname + domain name = FQDN
 
 nmcli c s ( for connection show)
 
+nmcli connection modify
+
+nmcli c m  'eth0' ipv4.method manual ipv4.address 10.0.2.152/24 ipv4.gatway 10.0.2.1 ipv4.dns 10.0.2.1
+
+nmcli connection down eth0
+
+nmcli c d eth0
+
+nmcli connection up eth0
+nmcli c u eth0
+
+nmcli c m  'eth0' ipv4.method auto # dhcp
+
+nmcli c m 'wired connection 1' ipv4.dns-search 'example.local'
+
 
